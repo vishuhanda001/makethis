@@ -1,0 +1,38 @@
+<div  class="nav" onnavscroll>
+  <div class="container">
+    <ul>
+      <li><a routerLink="home">Home</a></li>
+      <li><a routerLink="services">Services</a></li>
+      <li><a routerLink="about">About</a></li>
+      <li>
+          <div class="example-wrapper" *ngIf="notLoggedIn">
+              <kendo-dropdownbutton [data]="data">
+                  <i class="material-icons">accessibility</i> 
+                  <ng-template kendoDropDownButtonItemTemplate let-dataItem>
+                      <span (click)="enterUser(dataItem)">{{ dataItem.text }}</span>
+                  </ng-template>
+              </kendo-dropdownbutton> 
+          </div>
+          <div *ngIf="!notLoggedIn" class="loggedin">
+            <h4>hello {{welcomeText}}</h4>
+            <button (click)="onLogout()">Logout</button>
+          </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row"> 
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+<div class="abc" >
+  <style>
+    .abc{
+      width: 200px;
+      height: 2000px;
+      border: 2px solid red;
+    }
+    </style>
+</div> 
+</div>

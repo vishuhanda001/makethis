@@ -1,0 +1,137 @@
+
+.container{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 54%;
+    left: 20%;
+    z-index: 8;
+    box-shadow: 3px 3px 25px 2px #444;
+    border: 1px solid #444;
+}
+
+.search{
+    width: 100%;
+    height: 10%;
+    background-color:#444; 
+    text-align: center;
+    
+}
+.search input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    width: 307px;
+    margin-top: 13px;
+    font-size: 19px;
+    color: white;
+    outline: none;
+}
+.search .searchbtn{
+     border:2px solid white;
+    background-color: transparent;
+    height: 28px;
+    margin-left: 30px;
+    color: white;
+    border-radius: 20px;
+    width: 80px;
+}
+.secondcontainer{
+    // border: 2px solid;
+    width: 100%;
+    height: 90%;
+}
+#player{
+    width: 200px;
+    height: 200px;
+    // border: 2px solid red;
+}
+
+.videos{
+    overflow-y: scroll;
+    height: 447px;
+    width: 1100px;
+}
+.card{
+    height: 35%;
+    width: 18.8%;
+    border: 1px solid blueviolet;
+    float: left;
+    padding: 0.5%;
+    position: relative;
+}
+.card i{
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    font-size: 50px;
+    color: white;
+    
+}
+.card i:hover{
+    color: red;
+}
+
+.card img{
+    height: 70%;
+    width: 100%;
+    filter: brightness(80%);
+    // opacity: 0.8;
+}
+.card img:hover{
+    transform:  scale(1.05);
+    // opacity: 0.6;
+    filter: brightness(50%);
+}
+
+.layer{
+    height:27% ;
+    width: 99%;
+    background-color: white;
+    margin-top: -4px;
+    border: 1px solid white;
+}
+.layer span{
+    font-size: 11px;
+    letter-spacing: -0.1px;
+}
+// .card:first-child{
+//     margin-left: 10px;
+// }
+
+.app-player{
+    width: 100%;
+    border: 2px solid #444;
+    background-color: #444;
+    height: 9%;
+    text-align: center;
+}
+
+.app-player .material-icons
+{
+    font-size: 45px;
+}
+.app-player .material-icons:first-child{
+    color: white;
+}
+.app-player .material-icons:first-child:hover{
+    color: blue;
+}
+.app-player .material-icons:nth-child(2):hover{
+    color: blue;
+}
+.app-player .material-icons:nth-child(3):hover{
+    color: red;
+}
+
+.app-player .material-icons:nth-child(4)
+{
+    margin-left: 40px;
+    color: white;
+}
+
+.app-player .material-icons:nth-child(4):hover
+{
+    margin-left: 40px;
+    color: red;
+}

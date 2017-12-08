@@ -1,0 +1,25 @@
+<div class="container">
+  <div id="player"></div>
+</div>
+<div class="search">
+  <input type="text"  placeholder="Search" #searchquery>
+  <button class="searchbtn" (click)="search(searchquery)">Search</button>
+</div>
+<div class="secondcontainer">
+  <div class="videos">
+    <div class="card" *ngFor="let imagesOfId of data;let i=index">
+      <img [src]="imagesOfId.items[i].snippet.thumbnails.medium.url" alt="">
+      <i class="material-icons" (click)="playvideobyId(imagesOfId.items[i].id.videoId)">play_circle_filled</i>
+      <div class="layer">
+        <span>{{imagesOfId.items[i].snippet.channelTitle}}</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="app-player">
+  <i class="material-icons" (click)="playvideo()">play_circle_filled</i>
+  <i class="material-icons" (click)="pausevideo()">pause_circle_outline</i>
+  <i class="material-icons" (click)="stopvideo()">stop</i>
+  <i class="material-icons" (click)="searchnext()">skip_next</i>
+</div>

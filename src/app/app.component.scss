@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+//styling scrollbar
+
+
+.nav{
+    // border: 2px solid red;
+    height: 60px;
+    background-color: #202C3D;
+    border: 1px solid #202C3D;
+}
+.nav .container{
+    margin-top: 20px;
+}
+
+.nav .container li{
+ width: 50px;
+}
+.nav .container ul li:first-child{
+    margin-left: 800px;
+}
+.nav .container ul li{
+    list-style-type: none;
+    float: left;
+    margin-right: 100px;
+}
+
+.nav .container ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    // background-color:#84ffff;
+    padding: 5px;
+    border-radius: 10px;
+    color: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav .container ul li a:hover{
+    
+    font-weight: bold;
+}
+.loggedin{
+    width: 242px;
+    height: 40px;
+}
+
+.loggedin h4{
+    display: inline-block;
+    margin-right: 16px;
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loggedin button{
+    border: none;
+    height: 31px;
+    width: 62px;
+}
+.row .container{
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 1100px;
+    margin-top: 50px;
+}

@@ -1,0 +1,92 @@
+<div class="container">
+  <div class="login-head">
+    <h4>Join VISHU HANDA</h4>
+    <p>Already have an account ? Sign In</p>
+  </div>
+  <div class="social-accounts">
+    <p>Connect with your Social Account</p>
+    <button  class="facebook" (click)="signUpfacebook(fb)" #fb>
+        <i class="fa fa-facebook"></i>
+      Connect with Facebook</button>
+    <button  class="google" (click)="signUpgoogle(goo)" #goo>
+        <i class="fa fa-google" ></i>
+      Connect with Google</button>
+  </div>
+  <div class="or">
+    <div class="borders">
+        <p>OR</p>
+    </div>
+  </div>
+  <div class="createacc" *ngIf="createacc">
+    <p>Create my account</p>
+    <form novalidate (ngSubmit)="onSubmit(user)" [formGroup]="user">
+          <div class="formname">
+            <label class="name" >
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name*"
+                formControlName="name">
+            </label>
+            <span *ngIf="!user.get('name').valid && user.get('name').touched">Enter name*</span>
+          </div>
+          <div class="formemailadd">
+            <label class="emailadd" >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email address*"
+                  formControlName="email">
+              </label>
+              <span *ngIf="!user.get('email').valid && user.get('email').touched">Email invalid or already exists*</span>
+              <span *ngIf="user.get('email').valid && user.get('email').touched && user.get('email').errors?.emailalreadyexist">Email exists already*</span>
+          </div>
+          <div class="formnewpass">
+            <label class="newpass" >
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter a new password*"
+                  formControlName="password">
+              </label>
+              <span *ngIf="!user.get('password').valid && user.get('password').touched">Enter password between 8 to 12 characters*</span>
+          </div>
+          <div class="formmobno">
+            <label class="mobno" >
+                <input
+                  type="number"
+                  name="mobno"
+                  placeholder="Enter your mobile no*"
+                  formControlName="mobno">
+              </label>
+              <!-- || !user.get('mobno').errors.mobilenoinvalid -->
+              <span *ngIf="(!user.get('mobno').valid && user.get('mobno').touched) ">Enter valid Mobile No*</span>
+          </div>
+          <div class="sendotp" [hidden]="!user.get('name').valid || !user.get('email').valid || !user.get('password').valid || !user.get('mobno').valid">
+            
+          </div>
+          <!-- <div class="formotp" [hidden]="!user.get('name').valid || !user.get('email').valid || !user.get('password').valid || !user.get('mobno').valid">
+              <label class="otp" >
+                  <input
+                    type="number"
+                    name="otp"
+                    placeholder="Enter Verification Code"
+                    formControlName="otp">
+                  </label> -->
+                <!-- <span *ngIf="!user.get('mobno').valid && user.get('mobno').touched">Enter valid Mobile No*</span> -->
+            <!-- </div>  -->
+        
+
+              <button type="submit" [disabled]="!user.valid">Continue and Send Otp</button>
+            </form>
+
+  </div>
+
+  <div class="otp" *ngIf="!createacc">
+    <input type="text" placeholder="Enter Otp here" #otp>
+    <button class="send" (click)="sendOtpAgain()">ReSend</button>
+    <span *ngIf="invalidotp">Invalid OTP .kindly enter a valid otp</span>
+    <button class="continue" (click)="continuecreateacc(otp)">Continue</button>
+  </div>
+
+</div>

@@ -1,0 +1,66 @@
+.intro{
+    width: 1100px;
+    height: 500px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #444;
+    color: white;
+}
+.intro .hi{
+
+}
+.intro .name{
+    
+}
+
+.intro .skills{
+
+    // animation: type 3s steps(11),blink 0.5s infinite;
+    // animation-iteration-count: infinite;
+    // animation-direction:alternate;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // border-right:2px solid white;
+    // margin-left: auto;
+    // margin-right: auto;
+    
+}
+
+.intro button{
+    border: none;
+    outline: none;
+    width: 235px;
+    height: 45px;
+    border-radius: 20px;
+    color: white;
+    background: transparent;
+    border: 2px solid #07cb79;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.intro button:hover{
+    background-color: #07cb79;
+    transition: 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+@keyframes type {
+    0% {
+        width: 26ch;
+    }
+    100% {
+        width: 36ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to{ 
+        border-color: white;
+    }
+}

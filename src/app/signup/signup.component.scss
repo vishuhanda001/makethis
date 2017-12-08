@@ -1,0 +1,206 @@
+.container{
+    // border: 1px solid red;
+    height: 500px;
+    width: 1100px;
+}
+
+.login-head{
+    width: 1100px;
+    height: 100px;
+    // border: 5px solid green;
+}
+
+.login-head h4{
+    text-align: center;
+    font-family: 'Spectral SC', serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;    
+}
+.login-head p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;    
+}
+
+
+.social-accounts,.or,.createacc{
+float: left;
+// border: 2px solid blue;
+height: 398px;
+}
+.social-accounts{
+    border-right: 1px solid #808080;
+    border-width: 1px;
+}
+.createacc{
+    border-left: 1px solid #808080;
+    border-width: 1px;
+}
+.or .borders{
+    // border-left: 1px solid red;
+    // border-right: 1px solid red;
+    // background-color: green;
+    // width: 40px;
+    // height: 398px;
+}
+.social-accounts{
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+}
+.social-accounts p{
+    text-align: center;
+}
+
+.social-accounts button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-top: 15px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.social-accounts button:disabled:hover{
+    filter: brightness(150%);
+    
+}
+.social-accounts .facebook{
+    background-color: #3b5998;
+}
+.social-accounts .google{
+    background-color: #db4437;
+}
+.or{
+    width: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.or p{
+    text-align: center;
+    margin-top: 166px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.createacc{
+    width: 545px;
+}
+.formname,.formemailadd,.formnewpass,.formmobno,.formotp{
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border: none;
+    
+}
+.formname input,.formemailadd input,.formnewpass input,.formotp input {
+    height: 23px;
+    width: 210px;
+    border: none;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.formmobno input{
+    height: 23px;
+    width: 210px;
+    border: none;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formmobno {
+    display: inline-block;
+    
+}
+.sendotp button{
+    margin-bottom: 20px;
+}
+
+
+.formname span,.formemailadd span,.formnewpass span,.formmobno span{
+color: red;
+font-family: 'Montserrat', sans-serif;
+font-size: 12px;
+}
+
+.container .createacc p{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 90px;
+}
+.container .createacc button{
+    margin-left: 78px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: auto;
+    display: block;
+    border: none;
+    width: 178px;
+    height: 37px;
+
+}
+
+.container .createacc button:hover{
+    border: 1px solid green;
+}
+
+.container .otp{
+    width: 545px;
+    margin-left: 541px;
+    height: 401px;
+    border-left: 1px solid #808080;
+    position: relative;
+}
+
+.otp input{
+    margin-top: 130px;
+    margin-left: 100px;
+    border: none;
+    outline: none;
+    height: 23px;
+    width: 210px;
+    padding-left: 10px;
+
+}
+
+.otp  .send{
+    border: none;
+    height: 23px;
+    z-index: 3;
+    position: absolute;
+    top: 131px;
+    right: 235px;
+    background-color: transparent;
+    border: 2px solid #444;
+    border-radius: 10px;
+    outline: none;
+}
+.otp  .send:hover{
+    border: 2px solid green;
+}
+
+.otp span{
+    margin-top: 9px;
+    display: block;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 106px;
+    color: red;
+}
+
+.otp .continue{
+display: block;
+margin-left: 116px;
+margin-top: 50px;
+border: none;
+font-family: 'Montserrat', sans-serif;
+height: 37px;
+width: 178px;
+outline: none;
+}
+
+.otp .continue:hover{
+    border: 1px solid green;
+}
+
+
